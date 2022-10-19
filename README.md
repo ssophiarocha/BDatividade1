@@ -2,7 +2,8 @@
 PUC Minas Disciplina: Bancos de Dados Exercício elaborado pelo Prof. Álisson R. Arantes
 
 Considere o diagrama Entidade-Relacionamento apresentado abaixo:
-(diagrama 1)
+
+![organização](https://user-images.githubusercontent.com/101724908/196692088-fb9775bb-4748-41d5-b690-641e0dc1ca61.jpg)
 
 # O esquema relacional resultante é apresentado a seguir:
 
