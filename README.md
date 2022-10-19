@@ -1,4 +1,4 @@
-# BDatividade1
+# Atividade 1 - Banco de Dados.
 PUC Minas Disciplina: Bancos de Dados Exercício elaborado pelo Prof. Álisson R. Arantes
 
 Considere o diagrama Entidade-Relacionamento apresentado abaixo:
@@ -7,15 +7,25 @@ Considere o diagrama Entidade-Relacionamento apresentado abaixo:
 # O esquema relacional resultante é apresentado a seguir:
 
 ->Departamento(Cod(nn),Nome(nn),Endereço,Orcamento,GCPF,Inicio)
+
 ->Departamento[GCPF] → Empregado[CPF]
+
 ->Empregado(CPF(nn),Nome(nn),Sexo,Salario,Depto(nn))
+
 ->Empregado[Depto] → Departamento[Cod]
+
 ->Projeto(Cod(nn),Nome(nn),Endereço,Orcamento,Depto(nn))
+
 ->Projeto[Depto] → Departamento[Cod]
+
 ->Dependente(ECPF(nn),Nome(nn),Parentesco,Sexo)
+
 ->Dependente[ECPF] → Empregado[CPF]
+
 ->Participa(Empregado(nn),Projeto(nn),Horas)
+
 ->Participa[Empregado] → Empregado[CPF]
+
 ->Participa[Projeto] → Projeto[Cod]
 
 # Formule as consultas abaixo sobre o esquema de banco de dados acima na linguagem SQL:
